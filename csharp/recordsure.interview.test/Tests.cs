@@ -82,10 +82,10 @@ namespace recordsure.interview.test
         [Test]
         public void IsPalindrome() {
             var palindromes = new List<string> {
-
+                "ada", "dad", "madam"
             };
             var invalid = new List<string> {
-
+                "golden", "london", "girl"
             };
 
             foreach (var word in palindromes) {
@@ -104,7 +104,7 @@ namespace recordsure.interview.test
 
         [Test]
         public void CanSort() {
-            throw new NotImplementedException();
+            Assert.AreEqual(new int[] { 1, 2, 5, 6 }, instance.Sort(new int[] { 2, 6, 1, 5 }));
         }
 
         [Test]
